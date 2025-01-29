@@ -1,0 +1,28 @@
+1a)
+m1=int(input('Enter the marks for test 1: '))
+m2=int(input('Enter the marks for test 2: '))
+m3=int(input('Enter the marks for test 3: '))
+
+if m1<=m2 and m1<=m3:
+    avgMarks =(m3+m2)/2
+if m2<=m1 and m2<=m3:
+    avgMarks =(m1+m3)/2
+if m3<=m1 and m3<=m2:
+    avgMarks =(m1+m2)/2
+
+print('the average marks is ',avgMarks)
+-------------------------------------------------------------
+1b)
+
+val=int(input("Enter the input"))
+
+str_val=str(val)
+
+if str_val==str_val[::-1]:
+        print('is palindrome')
+else:
+    print('not a palindrome')
+
+for i in range(10):
+    print(str(i),"appears",str_val.count(str(i)),"times")
+
