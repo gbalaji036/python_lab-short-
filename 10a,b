@@ -1,0 +1,37 @@
+10a)
+
+import plotly.graph_objects as go 
+from datetime import datetime 
+import pandas as pd 
+ 
+date_strings = ["2024-01-01", "2024-01-02", "2024-01-03", "2024-01-04", "2024-01-05"] 
+dates = [datetime.strptime(date, "%Y-%m-%d") for date in date_strings] 
+values = [10, 15, 7, 20, 12] 
+ 
+df = pd.DataFrame({"Date": dates, "Values": values}) 
+ 
+fig = go.Figure(data=go.Scatter(x=df["Date"], y=df["Values"], mode="lines+markers")) 
+ 
+fig.update_layout(title="Time Series Plot", xaxis_title="Date", yaxis_title="Values") 
+ 
+fig.show() 
+
+
+---------------------------------------------------------------------------
+
+p10b)
+
+import plotly.express as px 
+ 
+ 
+data = { 
+    "City": ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"], 
+    "Latitude": [40.7128, 34.0522, 41.8781, 29.7604, 33.4484], 
+    "Longitude": [-74.0060, -118.2437, -87.6298, -95.3698, -112.0740], 
+    "Population": [8398748, 3980400, 2716000, 2328000, 1680992] 
+} 
+fig = px.scatter_geo(data, lat="Latitude", lon="Longitude", text="City", size="Population", 
+                     projection="natural earth", title="Sample City Population Map") 
+fig.show() 
+
+
