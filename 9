@@ -1,0 +1,13 @@
+import plotly.graph_objects as go 
+x_data = [1, 2, 3, 4, 5] 
+y_data = [10, 11, 12, 13, 14] 
+z_data = [20, 18, 16, 14, 12] 
+ 
+fig = go.Figure(data=[go.Scatter3d(x=x_data, y=y_data, z=z_data, mode='markers', 
+marker=dict(size=12, color='red'))]) 
+ 
+fig.update_layout(scene=dict(xaxis_title='X-axis', yaxis_title='Y-axis', zaxis_title='Z-axis'),
+title='3D Scatter Plot') 
+ 
+fig.show() 
+
