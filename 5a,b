@@ -1,0 +1,26 @@
+5a)
+
+import matplotlib.pyplot as plt
+import numpy as np 
+ 
+data = np.random.randn(1000) 
+plt.hist(data, bins=20, color='blue', edgecolor='black') 
+ 
+plt.xlabel('Value') 
+plt.ylabel('Frequency') 
+plt.title('Histogram Plot') 
+ 
+plt.show() 
+
+-------------------------------------
+5b)
+
+import matplotlib.pyplot as plt
+
+labels=['category A','catrgory B','catrgory C', 'catrgory D']
+sizes=[25,30,20,25]
+
+plt.pie(sizes,labels=labels,autopct='%1.1f%%',startangle 90,
+colors=['lightblue','lightgreen','lightcoral','lightsalmon'])
+plt.title('Pie chart Example')
+plt.show()
