@@ -1,0 +1,27 @@
+4a.Bar 
+
+import matplotlib.pyplot as plt
+
+branches = ["CSE", "AIML", "CSBS", "ECE", "EEE", "MECHANICAL", "CIVIL"]
+intake = [900, 360, 60, 180, 60, 60, 60]
+
+plt.bar(branches, intake, color="brown", edgecolor="blue", width=0.5)
+plt.title("Intake at BMSITEM - 2024")
+plt.xlabel("Branches")
+plt.ylabel("Intake")
+plt.show()
+
+---------------------------------------------
+
+4b. Write a Python program to Demonstrate how to Draw a Scatter Plot 
+
+import matplotlib.pyplot as plt
+hours = [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 16, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14]
+marks = [60, 62, 65, 66, 68, 70, 71, 68, 66, 65, 64, 62, 60, 58, 45, 43, 42, 40, 35]
+plt.scatter(hours, marks)
+plt.title("Hours to Marks Correlation")
+plt.xlabel("Hours Studied")  # Clarified label
+plt.ylabel("Marks Scored")
+plt.show()
+
+
